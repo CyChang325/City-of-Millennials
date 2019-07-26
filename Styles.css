@@ -1,0 +1,66 @@
+/* Grids */
+
+.grid-container {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-1 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-2 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-3 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-4 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-custom {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 41.9% 57.1%;
+	grid-gap: 10px;
+}
+
+.grid-item {
+	overflow: hidden;
+	float: left;
+	padding: 0px, 0px, 0px, 0px;
+}
+
+.grid-item-padded {
+	overflow: hidden;
+	float: left;
+	padding: 40px;
+}
