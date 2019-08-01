@@ -1,3 +1,7 @@
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
 <style>
 body {
     background-color: rgb(233, 233, 233);
@@ -36,6 +40,27 @@ body {
     height: 1px;
 }
 
+.barchart {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.grid-container-2 {
+    margin-top: 0px;
+    margin-left: 30px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.text {
+    margin-top: 6%;
+    margin-left: 80px;
+    width: 350px;
+    line-height: 25px;
+}
 
 
 
@@ -50,21 +75,25 @@ body {
     </iframe>
     </div>
 
-    <section class=paragraph>
-        <div class>
-            <p>
-            We quantified the sensing power of a taxi fleet to cover a city’s street segments during a day. The prediction of our model agrees with empirical data from Singapore, Chicago, San Francisco, New York, Vienna, and Shanghai, showing that a drive-by sensing solution might be applied globally.
-            </p>
-        </div>
-        <div>
-            <p class>
-            We quantified the sensing power of a taxi fleet to cover a city’s street segments during a day. The prediction of our model agrees with empirical data from Singapore, Chicago, San Francisco, New York, Vienna, and Shanghai, showing that a drive-by sensing solution might be applied globally.
-            </p>    
-        </div>
-        
-   
-    </section>
+    
+       
+    <!-- Add 2 buttons -->
+    <button class=barchart onclick="update('var1')">Variable 1</button>
+    <button class=barchart onclick="update('var2')">Variable 2</button>
 
+    <div class="grid-container-2">
+
+        <div id="my_dataviz"></div>
+
+        <div>
+                <p class=text>
+                We quantified the sensing power of a taxi fleet to cover a city’s street segments during a day. The prediction of our model agrees with empirical data from Singapore, Chicago, San Francisco, New York, Vienna, and Shanghai, showing that a drive-by sensing solution might be applied globally. We quantified the sensing power of a taxi fleet to cover a city’s street segments during a day. The prediction of our model agrees with empirical data from Singapore, Chicago, San Francisco, New York, Vienna, and Shanghai, showing that a drive-by sensing solution might be applied globally.
+                </p>    
+        </div>   
+
+    </div>
+
+    
     <div class="divider-line"></div>
 
     <section class=picture>
@@ -92,6 +121,14 @@ body {
             <img class=diagram src="images/Density Alluvial.png"  alt="alluvial diagram">
 
     </section>
+
+    <script src="script/barchart.js"></script>
+
+    <script>
+
+            //Generate the Chart based on a CSV File and the id of the container
+            generate2dDensityChart("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/barplot_change_data.csv", "#my_dataviz");
+    </script>
 
 
 </body>
