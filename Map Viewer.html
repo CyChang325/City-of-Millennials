@@ -1,12 +1,17 @@
+<head>
+
 <!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>  
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 
+</head>
 
 <style>
+
 body {
     background-color: rgb(233, 233, 233);
-    padding-top: 3%;
+    padding-top: 0%;
     padding-left: 15%;
     padding-right: 15%;
     height: 3000;
@@ -58,11 +63,141 @@ body {
 
 .text {
     margin-left: 80px;
+    padding-bottom: 20px;
     width: 400px;
     line-height: 25px;
     font-size: 16px;
 }
 
+/*Drop Menu style*/
+
+nav {
+  text-align: center;
+  color: rgb(66, 66, 66);
+
+}
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  position: relative;
+  list-style: none;
+  background: rgb(204, 204, 204);
+  font-weight: 400;
+  font-size: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0;
+  margin: 30px auto;
+}
+#main li {
+  font-size: 0.7rem;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 115px;
+}
+
+li {
+  margin: 0;
+}
+
+.drop {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 48px;
+}
+.drop div {
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  -ms-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+.drop li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: rgb(204, 204, 204) !important;
+}
+
+#marker {
+  height: 6px;
+  background: rgb(243, 49, 75) !important;
+  position: absolute;
+  bottom: 0;
+  width: 119px;
+  z-index: 2;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+#main li:nth-child(1):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(1):hover ~ #marker {
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+
+#main li:nth-child(2):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(2):hover ~ #marker {
+  -webkit-transform: translate(120px, 0);
+  -moz-transform: translate(120px, 0);
+  -ms-transform: translate(120px, 0);
+  transform: translate(120px, 0);
+}
+
+#main li:nth-child(3):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(3):hover ~ #marker {
+  -webkit-transform: translate(240px, 0);
+  -moz-transform: translate(240px, 0);
+  -ms-transform: translate(240px, 0);
+  transform: translate(240px, 0);
+}
+
+#main li:nth-child(4):hover ul div {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(4):hover ~ #marker {
+  -webkit-transform: translate(360px, 0);
+  -moz-transform: translate(360px, 0);
+  -ms-transform: translate(360px, 0);
+  transform: translate(360px, 0);
+}
+
+/*Drop Menu style*/
 
 
 .embed-container {position: relative; padding-bottom: 64%; height: 0; max-width: 100%;} 
@@ -70,6 +205,25 @@ body {
 </style>
 
 <body>
+
+    <nav>
+        <ul id="main">
+          <a href="https://www.google.com/"><li>Home</li></a>
+          <li>Boston City</li>
+          <li>Neighborhood</li>
+          <li>Case Study
+            <ul class="drop">
+              <div>
+              <li>Allston / Brighton</li>
+              <li>South Boston</li>
+              <li>Dorchester</li>
+              </div>
+            </ul>
+          </li>
+          <div id="marker"></div>
+        </ul>
+      </nav>
+         
     
     <div class="embed-container">
     <iframe width="940" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="City of Millennial" src="//www.arcgis.com/apps/Embed/index.html?webmap=301ad099d619472c8e66aa32b9de0b52&extent=-71.3327,42.2015,-70.8298,42.4023&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&disable_scroll=false&theme=light">
@@ -151,9 +305,9 @@ body {
     <script>
 
             // set the dimensions and margins of the graph
-            var margin = {top: 30, right: 30, bottom: 70, left: 60},
-                width = 460 - margin.left - margin.right,
-                height = 400 - margin.top - margin.bottom;
+            var margin = {top: 50, right: 30, bottom: 70, left: 60},
+                width = 440 - margin.left - margin.right,
+                height = 420 - margin.top - margin.bottom;
             
             // append the svg object to the body of the page
             var svg = d3.select("#my_dataviz")
