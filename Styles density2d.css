@@ -1,0 +1,122 @@
+/* Grids */
+
+body {
+	background-color: white;
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 2000px;
+	
+}
+
+.title {
+	font-size: 30px;
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.grid-container {
+	padding-left: 30%;
+	padding-right: 30%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-1 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-2 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-3 {
+	margin-top: 100px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 120px;
+	
+}
+
+.grid-container-3-1 {
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 120px;
+	line-height: 30px;
+	
+}
+
+.grid-container-4 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-5 {
+	align-self: center;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 25px;
+	
+}
+
+
+
+.grid-container-custom {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 41.9% 57.1%;
+	grid-gap: 10px;
+}
+
+.grid-item {
+	overflow: hidden;
+	float: left;
+	padding: 0px, 0px, 0px, 0px;
+}
+
+.grid-item-padded {
+	overflow: hidden;
+	float: left;
+	padding: 40px;
+}
+
+.diagram {
+	width:300px;
+}
+
+.annotation {
+	margin-top: 4px;
+	padding-left: 35%;
+}
+
+.paragraph {
+	margin-right: 10%;
+}

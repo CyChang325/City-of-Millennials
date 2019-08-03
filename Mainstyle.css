@@ -1,0 +1,184 @@
+body {
+    background: rgb(255, 255, 255);
+    color: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+header {
+  background: rgb(255, 255, 255);
+  height: 100px;
+
+}
+
+.title {
+  padding-left: 250px;
+  padding-top: 50px;
+  color: rgb(236, 69, 97);
+  font-size: 40px;
+}
+
+.navigation {
+  padding-top: 12px;
+  padding-left: 0px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 4%;
+  margin-left: 15px;
+}
+
+.headimage {
+  margin-top: 35px;
+  padding-left: 17%;
+  padding-right: 15%;
+  width: 1200px;
+}
+
+
+.text {
+    color: rgb(228, 95, 95);
+	  font-family: 'BagnardRegular';
+	  padding-top: 80px;
+    padding-left: 240px;
+    padding-right: 5%;
+    line-height: 25px;
+    font-size: 20px;
+    width: 600px;
+    
+}
+
+.diagram1 {
+  padding-top: 6%;
+  padding-left: 5%;
+  padding-right: 25%
+}
+
+.diagram2 {
+  padding: 8%;
+  width: 500px;
+}
+
+
+
+/* Grids */
+
+.grid-container {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-1 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-2 {
+    margin: 20px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+    grid-gap: 10px;
+
+	
+}
+
+.grid-container-2-1 {
+  margin: 10px;
+width: 100%;
+display: grid;
+grid-template-columns: 30% 70%;
+  grid-gap: 10px;
+
+
+}
+
+.grid-container-3 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-4 {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-custom {
+	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 41.9% 57.1%;
+	grid-gap: 10px;
+}
+
+.grid-item {
+	overflow: hidden;
+	float: left;
+	padding: 0px, 0px, 0px, 0px;
+}
+
+.grid-item-padded {
+	overflow: hidden;
+	float: left;
+	padding: 40px;
+}
+
+/* diagram 1 */
+
+h1 {
+  font-family: 'BagnardRegular';
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.container {
+background: rgb(255, 255, 255);
+  max-width: 400px;
+  padding-top: 40px;
+  padding-right: 130px;
+  font-family: 'BagnardRegular';
+  color: #444;
+}
+
+.panel {
+  background: rgb(255, 255, 255);
+  border-bottom: 2px solid #F7F7F7;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+svg {
+  height: 430px;
+  width: 430px;
+}
+
+.graph-hd {
+  margin-bottom: 20px;
+}
+
+.graph-bd {
+  overflow: hidden;
+}
+
+.graph-bd-md {
+  float: left;
+}
