@@ -1,0 +1,87 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<title>Neighborhood</title>
+
+<link rel="stylesheet" href="Styles density2d.css">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- specific plugin -->
+<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+
+<!-- Create a div where the graph will take place -->
+
+<body>
+
+  <header class="title">City of Millenials</header>
+  <div class="grid-container-5">
+
+    <!-- Container where the graph is drawn. The ID need to be unqiue -->
+    <div class="grid-item" id="my_dataviz"><p>Allston / Brighton</p></div>
+    <div class="grid-item" id="my_dataviz2"><p>Fenway</p></div>
+    <div class="grid-item" id="my_dataviz3"><p>Jamaica Plain / Mission Hill</p></div>
+
+    <div class="grid-item" id="my_dataviz4"><p>Dorchester</p></div>
+    <div class="grid-item" id="my_dataviz5"><p>South End</p></div>
+    <div class="grid-item" id="my_dataviz6"><p>Back Bay / Beacon Hill</p></div>
+
+    <div class="grid-item" id="my_dataviz7"><p>Downtown</p></div>
+    <div class="grid-item" id="my_dataviz8"><p>Roxbury</p></div>
+    <div class="grid-item" id="my_dataviz9"><p>South Boston</p></div>
+
+    <div class="grid-item" id="my_dataviz10"><p>East Boston</p></div>
+    <div class="grid-item" id="my_dataviz11"><p>Hyde Park</p></div>
+    <div class="grid-item" id="my_dataviz12"><p>Mattapan</p></div>
+
+    <div class="grid-item" id="my_dataviz13"><p>West Roxbury</p></div>
+    <div class="grid-item" id="my_dataviz14"><p>Charlestown</p></div>
+    <div class="grid-item" id="my_dataviz15"><p>Roslindale</p></div>
+
+
+  </div>
+
+  <div class="grid-container-3">
+    <div><a href="case study - Allston Brighton.html"><img class=diagram src="images/Density2d Prototype-01.jpg" alt="prototype"></a><p class=annotation>TYPE 1</p></div>
+    <div><a href="Case study - South Boston.html"><img class=diagram src="images/Density2d Prototype-02.jpg" alt="prototype"></a><p class=annotation>TYPE 2</p></div>
+    <div><a href="Case study - Dorchester.html"><img class=diagram src="images/Density2d Prototype-03.jpg" alt="prototype"></a><p class=annotation>TYPE 3</p></div>
+  </div>
+
+  <div class="grid-container-3-1">
+
+      <p class=paragraph>Of the 147,689 total students enrolled in Boston’s institutions of higher education for Fall 2017, just over 50,000 or 1:3 are housed on-campus or in university-provided housing (44,189 undergraduates and 6,077 graduates). More than 97,000 (66%) students reside off-campus. Approximately 65,500 or two thirds of off-campus students reside in private housing, of which 50.7% are undergraduates and 49.3% are graduate students. </p>
+      <p class=paragraph>Of the 147,689 total students enrolled in Boston’s institutions of higher education for Fall 2017, just over 50,000 or 1:3 are housed on-campus or in university-provided housing (44,189 undergraduates and 6,077 graduates). More than 97,000 (66%) students reside off-campus. Approximately 65,500 or two thirds of off-campus students reside in private housing, of which 50.7% are undergraduates and 49.3% are graduate students. </p>
+      <p class=paragraph>Of the 147,689 total students enrolled in Boston’s institutions of higher education for Fall 2017, just over 50,000 or 1:3 are housed on-campus or in university-provided housing (44,189 undergraduates and 6,077 graduates). More than 97,000 (66%) students reside off-campus. Approximately 65,500 or two thirds of off-campus students reside in private housing, of which 50.7% are undergraduates and 49.3% are graduate students. </p>
+  
+    </div>
+  
+  <script src="Density2DScript.js"></script>
+
+  <script>
+
+    //Generate the Chart based on a CSV File and the id of the container
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Allston_Brighton_Density2d.csv", "#my_dataviz");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Fenway_Density2d.csv", "#my_dataviz2");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Jamaica%20Plain_Mission%20Hill_Density2d.csv", "#my_dataviz3");
+
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Dorchester2d.csv", "#my_dataviz4");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/South%20End2d.csv", "#my_dataviz5");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Back%20Bay_Beacon%20Hill%202d.csv", "#my_dataviz6");
+
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Downtown%202d.csv", "#my_dataviz7");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Roxbury2d.csv", "#my_dataviz8");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/South%20Boston%202d.csv", "#my_dataviz9");
+
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/East%20Boston.csv", "#my_dataviz10");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Hyde%20Park.csv", "#my_dataviz11");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Mattapan.csv", "#my_dataviz12");
+
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/West%20Roxbury_Density2d.csv", "#my_dataviz13");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Charlestown%202d.csv", "#my_dataviz14");
+    generate2dDensityChart("https://raw.githubusercontent.com/CyChang325/Urban-Density-Research/master/Roslindale.csv", "#my_dataviz15");
+
+  </script>
+
+</body>
