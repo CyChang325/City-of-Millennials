@@ -70,6 +70,11 @@
     
 }
 
+a {
+  text-decoration: none;
+  color: rgb(105, 105, 105)
+  }
+
 
 /* Grids */
 
@@ -132,7 +137,7 @@ grid-template-columns: 40% 60%;
 	grid-template-columns: auto auto;
   grid-gap: 30px;
   padding-top: 30px;
-  padding-left: 17%;
+  padding-left: 12%;
   padding-right: 10%;
 
 	
@@ -534,23 +539,25 @@ li {
 
   <header class=grid-container-2-1>
     <div class=title>City of Millenials</div>
+
     <nav>
-        <ul id="main">
-          <a href="https://www.google.com/"><li>Home</li></a>
-          <li>Boston City</li>
-          <li>Neighborhood</li>
-          <li>Case Study
-            <ul class="drop">
-              <div>
-              <li>Allston / Brighton</li>
-              <li>South Boston</li>
-              <li>Dorchester</li>
-              </div>
-            </ul>
-          </li>
-          <div id="marker"></div>
-        </ul>
-      </nav>
+      <ul id="main">
+        <a href="City of Millennials.html" ><li>Home</li></a>
+        <li><a href="Map Viewer.html" >Boston City</li></a>
+        <li><a href="Density2d Research.html" >Neighborhood</li></a>
+        <li>Case Study
+          <ul class="drop">
+            <div>
+                <a href="case study - Allston Brighton.html"><li>Allston / Brighton</li></a>
+                <a href="Case study - South Boston.html" ><li>South Boston</li></a>
+                <a href="Case study - Dorchester.html" ><li>Dorchester</li></a>
+            </div>
+          </ul>
+        </li>
+        <div id="marker"></div>
+      </ul>
+    </nav>
+    
     </header>
   
  
@@ -611,7 +618,7 @@ li {
       Although the above data analysis shows that students occupy a high proportion in the city, we do not know their living distribution in the city. Using Boston census 2010 data, we obtained the residential distribution of students between the ages of 20 and 34 according to their age and education level. Furthermore, to further understand the interaction between the student population and the town, we put forward three questions:</p>
   </div>
 
-  <div style="align-content: center; padding-left: 26%; padding-right: 20%; padding-top: 50px; ">
+  <div style="align-content: center; padding-left: 23%; padding-right: 20%; padding-top: 50px; ">
     <a href="Map Viewer.html"><img style="width: 700px" src="images/city scale.jpg"; alt="scale1"></a>
   </div>
 
@@ -621,7 +628,7 @@ li {
         Does the student residential area show a concentrated distribution? If so, where are they concentrated? If not, what is the distribution pattern of the student population in this area?</p>
     </div>
 
-    <div style="align-content: center; padding-left: 35%; padding-right: 20%; padding-top: 70px; padding-bottom: 30px; ">
+    <div style="align-content: center; padding-left: 32%; padding-right: 20%; padding-top: 70px; padding-bottom: 30px; ">
         <a href="Density2d Research.html"><img style="width: 400px" src="images/Neighborhood scale.jpg"; alt="scale2"></a>
     </div>
 
@@ -664,7 +671,7 @@ li {
         </svg>
         
         <span class="button--bubble__container">
-          <a href="Density2d Research.html" class="button button--bubble">
+          <a href="Map Viewer.html" class="button button--bubble">
             Explore more
           </a>
           <span class="button--bubble__effect-container">
@@ -794,7 +801,7 @@ li {
           
           
           
-        }, 2000, mina.easeinout); 
+        }, 15000, mina.easeinout); 
         
       };
      

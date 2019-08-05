@@ -28,9 +28,11 @@
           .feature{
           background:rgb(24, 30, 31);
           color:rgb(27, 27, 27);
-          height: 1200px;
+          height: 2600px;
           padding-top: 20px;
           width: 100vw;
+          padding-left:15%;
+          padding-right: 15%;
       
           }
 
@@ -44,7 +46,7 @@
           }
 
 
-          .text {
+          .text1 {
               font-family: 'Times New Roman', Times, serif;
               padding-top: 7%;
               padding-left: 20%;
@@ -54,17 +56,44 @@
           }
 
           .alluvialcontainer {
-            margin-top: 7%;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin-top: 5%;
+            position: relative;
+            display: block;
 
           }
 
           .alluvial {
-            width: 1200px;
-            padding-left: 9%;
+            width: 95%;
+            padding-left: 7%;
+            position: relative;
+            display: block;
+
 
           }
+
+          * {
+             box-sizing: border-box;
+          }
+
+          .paragraph {
+            position: relative;
+            margin-top: 10%;
+            margin-bottom: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 120px;
+            font-family:'Times New Roman', Times, serif;
+            line-height: 25px;
+            color: rgb(224, 224, 224);
+        }
+
+        .divider-line {
+            background-color:rgb(253, 253, 253);
+            width: 100%;
+            height: 1px;
+        }
 
           
           /*Drop Menu style*/
@@ -203,6 +232,99 @@
 
         /*Drop Menu style*/
 
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: rgb(253, 253, 253);
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(247, 220, 220, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #f5f5f5;
+          font-size: 14px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #ffffff;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 10px;
+          width: 10px;
+          margin: 0 2px;
+          background-color: rgb(119, 119, 119);
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+          background-color: #e4e4e4;
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
           
 
         </style>
@@ -332,12 +454,112 @@
 
         <div class=feature>
                                           
-          <h4 class=text>This research aims to unravel the challenge and opportunity of Boston neighborhood from students residential housing market change in the recent 10 years. To tackle this challenge, I took a cross-disciplinary approach combing census factor, urban residential factor and related amenity factor; the research analyzed these factors from city, neighborhood and community scale. <br> <br> Of the 147,689 total students enrolled in Boston’s institutions of higher education for Fall 2017, just over 50,000 or 1:3 are housed on-campus or in university-provided housing (44,189 undergraduates and 6,077 graduates). More than 97,000 (66%) students reside off-campus. Approximately 65,500 or two thirds of off-campus students reside in private housing, of which 50.7% are undergraduates and 49.3% are graduate students.  </h4> 
+            <section class=paragraph>
+                <div class>
+                    <p>
+                      According to the above research, we can already know that Allston and Brighton are regarded as high-student residential density neighborhoods. Next, we obtained Land use types of the community through Boston Parcel data, including the number of residential households corresponding to each parcel, owner occupancy, total floor Numbers and other relevant data to explore the correlation between these factors. We also introduce the concept of BCR (building coverage ratio) as another way to calculate urban density and compare it with student population density.
+                    </p>
+                </div>
+                <div>
+                    <p class>
+                      Census mapping revealed that the high-density living areas of students in this community were concentrated on both sides of the axis of Commonwealth AVE, while the high student density was relatively rare in other regions, indicating that students and families in this community lived in distinct areas. <br><br>
+                      By parcel mapping, we find that the total number of residences along Commonwealth AVE is far higher than that of other areas, and the BCR of these areas is generally higher because there are a large number of condo or apartment 7 units above in these areas. Based on census mapping, it can be preliminarily concluded that the urban density of the community along the Commonwealth AVE in Allston is relatively high, and students tend to rent apartments close to Green line in the community.
+                    </p>    
+                </div>
+          
+              </section>
 
           <div class=alluvialcontainer><img class=alluvial src="images/Allston.png" alt="alluvial diagram"></div>
-          
+
+          <section class=paragraph>
+            <div class>
+                <p>
+                  To get a more accurate understanding of the rental situation in this region, we imported the total number of households of all types of housing, housing type, whether it is a lease, whether it is a residential land for comparative analysis. Through the diagram, we find that the number of apartments above 7 units in this community is the largest, followed by the residential condo and residential two families. 
+                </p>
+            </div>
+            <div>
+                <p class>
+                  Among them, the apartment above 7 units are mainly rented for use, while the residential condo and residential two families are partially rented for their own use. On the whole, the rental market in this community accounts for about 66%, which is about twice that of the self-use housing market, indicating that the overall population flow rate in this community is also relatively frequent.
+                </p>    
+            </div>
+      
+          </section>
+
+          <br>
+
+          <div class="divider-line"></div>
+
+          <br><br><br><br><br><br><br><br>
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/Allston LU+Total Unit.png" style="width:100%">
+              <div class="text">Land se + Residential Unit Map</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/Allston BCR+UNIT.png" style="width:100%">
+              <div class="text">BCR + Residential Unit Map</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/Allston Pop+density.png" style="width:100%">
+              <div class="text">Student Population + Residential Density Map</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+                
 
         </div>
+
+        <!--slide script-->
+        <script>
+          var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+        }
+        </script>    
 
         
       </body>
