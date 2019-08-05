@@ -1,7 +1,7 @@
 /* Grids */
 
 body {
-	background-color: white;
+	background-color: rgb(233, 233, 233);
 	padding-left: 15%;
 	padding-right: 15%;
 	height: 2600px;
@@ -56,8 +56,9 @@ body {
 	  grid-template-columns: auto auto;
 	grid-gap: 40px;
 	padding-top: 30px;
-	padding-left: 10%;
+	padding-left: 6%;
 	padding-right: 5%;
+	position: relative;
   
 	}
 
@@ -68,7 +69,8 @@ body {
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 120px;
+	grid-gap: 50px;
+	position: relative;
 	
 }
 
@@ -79,8 +81,11 @@ body {
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 120px;
+	grid-gap: 50px;
 	line-height: 30px;
+	font-family: 'Times New Roman', Times, serif;
+	position: relative;
+	color: rgb(107, 107, 107)
 	
 }
 
@@ -101,6 +106,7 @@ body {
 	grid-template-columns: auto auto auto auto auto;
 	grid-gap: 25px;
 	
+	
 }
 
 
@@ -117,6 +123,7 @@ body {
 	overflow: hidden;
 	float: left;
 	padding: 0px, 0px, 0px, 0px;
+	position: relative;
 }
 
 .grid-item-padded {
@@ -164,6 +171,15 @@ body {
     
 }
 
+a {
+	text-decoration: none;
+	color: rgb(105, 105, 105)
+	}
+
+.note {
+	font-size: 13px;
+}
+
 
 /*Drop Menu style*/
 
@@ -179,7 +195,7 @@ nav {
   #main {
 	position: relative;
 	list-style: none;
-	background: rgb(255, 255, 255);
+	background: rgb(224, 224, 224);
 	font-weight: 400;
 	font-size: 0;
 	text-transform: uppercase;
@@ -225,7 +241,7 @@ nav {
 	display: block;
 	padding: 0;
 	width: 100%;
-	background: rgb(255, 255, 255) !important;
+	background: rgb(224, 224, 224) !important;
   }
   
   #marker {
