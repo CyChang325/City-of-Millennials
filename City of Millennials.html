@@ -6,24 +6,25 @@
 	background-color: white;
 	padding-left: 15%;
 	padding-right: 15%;
-	height: 2000px;
+	height: 5700px;
 	
 }
 
 
 .title {
-  padding-top: 34px;
+  padding-top: 27px;
   color: rgb(236, 69, 97);
-  padding-left: 30%;
-  font-size: 33px;
+  padding-left: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 38px;
 }
 
 
 
 .text {
     color: rgb(228, 95, 95);
-	  font-family: 'BagnardRegular';
-    padding-top: 80px;
+	  font-family:'Times New Roman', Times, serif;
+    padding-top: 60px;
     padding-left: 50px;
     padding-right: 10%;
     line-height: 25px;
@@ -32,12 +33,42 @@
     
 }
 
+.text2 {
+    color: rgb(228, 95, 95);
+	  font-family:'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 10%;
+    line-height: 25px;
+    font-size: 20px;
+    width: 600px;
+    
+}
+
+.text3 {
+    color: rgb(228, 95, 95);
+	  font-family:'Times New Roman', Times, serif;
+    padding-top: 30px;
+    line-height: 25px;
+    font-size: 20px;
+    width: 400px;
+    
+}
+
 .censusdiagram {
   width:1200px;
-  padding-right: 40px;
+  padding-right: 0px;
   padding-top: 1%;
 }
 
+.divider-line {
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
 
 
 /* Grids */
@@ -62,6 +93,7 @@
 
 .grid-container-2 {
   margin: 20px;
+  padding-bottom: 40px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto;
@@ -72,7 +104,7 @@
 
 .grid-container-2-1 {
   margin: 10px;
-  padding-right: 20%;
+  padding-right: 10%;
 width: 100%;
 display: grid;
 grid-template-columns: 40% 60%;
@@ -82,9 +114,8 @@ grid-template-columns: 40% 60%;
 }
 
 .grid-container-2-2 {
-  margin-top: 80px;
-  padding-left: 8%;
-  padding-right: 8%;
+  margin-top: 60px;
+  padding-left: 1%;
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto;
@@ -93,10 +124,36 @@ grid-template-columns: 40% 60%;
 	
 }
 
+.grid-container-2-3 {
+  margin: 20px;
+  padding-bottom: 40px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto;
+  grid-gap: 30px;
+  padding-top: 30px;
+  padding-left: 17%;
+  padding-right: 10%;
+
+	
+}
+
 
 
 .grid-container-3 {
 	margin-top: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	
+}
+
+.grid-container-3-1 {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 3%;
+  padding-right: 5%;
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -129,7 +186,7 @@ grid-template-columns: 40% 60%;
 
 .grid-item-1 {
   overflow: hidden;
-  padding-right: 15%;
+  padding-right: 10%;
 	float: left;
 	padding: 0px, 0px, 0px, 0px;
 }
@@ -162,6 +219,7 @@ background: rgb(255, 255, 255);
   border-bottom: 2px solid #F7F7F7;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 400px;
 }
 
 svg {
@@ -175,6 +233,11 @@ svg {
 
 .graph-bd {
   overflow: hidden;
+  text-align: center;
+  line-height: 25px;
+  color: rgb(124, 124, 124);
+  font-size: 13px;
+
 }
 
 .graph-bd-md {
@@ -310,10 +373,162 @@ li {
 }
 
 /*Drop Menu style*/
+
+/*Explore Button style*/
+
+.explorebutton {
+  display: block;
+  padding-top: 10%;
+  padding-left: 42%;
+  height: 30px;
+  -webkit-animation: hue-rotate 10s linear infinite;
+          animation: hue-rotate 10s linear infinite;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: 1px;
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  transition: all 0.1s ease-out;
+}
+.button:hover {
+  background-color: #90feb5;
+  color: #fff;
+}
+.button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.button--bubble {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background: none;
+}
+.button--bubble:hover {
+  background: none;
+}
+.button--bubble:hover + .button--bubble__effect-container .circle {
+  background: #44fd82;
+}
+.button--bubble:hover + .button--bubble__effect-container .button {
+  background: #44fd82;
+}
+.button--bubble:active + .button--bubble__effect-container {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.button--bubble__container {
+  position: relative;
+  display: inline-block;
+}
+.button--bubble__container .effect-button {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  top: 50%;
+  left: 25%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #222;
+  transition: background 0.1s ease-out;
+}
+
+.button--bubble__effect-container {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  -webkit-filter: url("#goo");
+  filter: url("#goo");
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+}
+.button--bubble__effect-container .circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background: #222;
+  transition: background 0.1s ease-out;
+}
+.button--bubble__effect-container .circle.top-left {
+  top: 40%;
+  left: 27%;
+}
+.button--bubble__effect-container .circle.bottom-right {
+  bottom: 40%;
+  right: 27%;
+}
+
+.goo {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+
+.button--bubble__container {
+  top: 50%;
+  margin-top: -25px;
+}
+
+@-webkit-keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+/*Explore Button style*/
+
 </style>
-
-
- 
 
 <body>
 
@@ -343,9 +558,16 @@ li {
     <img class=censusdiagram src="images/Student-Census-Density.gif" alt="census density">
   </div>
 
+  <div class=grid-container-2>
+    <p class=text2><a style="font-weight: bold"; >Millennials in Boston</a> <br><br><br> With a full 34 percent of its population between the ages of 20 and 34, Boston has the highest concentration of millennials among the 25 largest U.S. cities. From that, the percentage of 25- to 34-year-olds with a bachelor’s degree or higher grew from 52 percent in 2000 to 65 percent in 2015.  </p>
+    <p class=text2>There is no doubt that Boston’s world-renowned colleges and universities provide the City and region with unparalleled cultural resources, a thriving economic engine, and a talented workforce at the forefront of global innovation, however, till 2017, the more than 147,000 students enrolled in Boston-based undergraduate and graduate degree programs place enormous strain on the city’s residential housing market. Thus, as a significant population group of Millennials, students become an indispensable group to help to explore the relationship between Millennials and the city they live in.</p>
+  </div>
+
+
+  <div class="divider-line"></div>
   <div class=grid-container-2-2>
     <div class=text>
-      <p>This research aims to unravel the challenge and opportunity of Boston neighborhood from students residential housing market change in the recent 10 years. To tackle this challenge, I took a cross-disciplinary approach combing census factor, urban residential factor and related amenity factor; the research analyzed these factors from city, neighborhood and community scale. </p>
+      <p><a style="font-weight: bold"; >Student Housing in Boston</a><br><br><br>The student population residing in Boston includes more than 38,000 (46%) students residing on-campus or in university provided housing and nearly 45,000 (54%) students living off-campus. The population residing on-campus or in university-managed housing is primarily composed of undergraduate students (35,431 or 92%), while the gross off-campus population is more evenly split between undergraduates (23,971 or 53%) and graduates (20,959 or 47%), bringing the total to 44930 students exerting pressure on Boston’s private housing market.</p>
     </div>
     <div class="grid-item-1">
             
@@ -353,18 +575,19 @@ li {
                 <div class="panel">
                   <div class="graph">
                     <div class="graph-hd">
-                      <h1>Snap.svg Circle Graph</h1>
+                      
                     </div>
                     <div class="graph-bd">
                       <div class="graph-bd-md">
                         <svg id="svg"></svg>
                       </div>
                       <div class="graph-bd-text">
-                        <ul>
-                          <li class="js-graphItem" data-val="80" data-color="#922cd1">Javascript: 80</li>
-                          <li class="js-graphItem" data-val="60" data-color="#d12c87">CSS: 60</li>
-                          <li class="js-graphItem" data-val="40" data-color="#d17f2c">CSS: 40</li>
-                          <li class="js-graphItem" data-val="20" data-color="#e3c91e">CSS: 20</li>
+                        <ul style="list-style: none">
+                          <li class="js-graphItem" data-val="77" data-color="#632cd1">Total Education population: 530091</li>
+                          <li class="js-graphItem" data-val="34" data-color="#922cd1">Population of Millenials: 232931</li>
+                          <li class="js-graphItem" data-val="21" data-color="#d12c87">University and Colllege Stu: 147000</li>
+                          <li class="js-graphItem" data-val="13" data-color="#d17f2c">Total Housed off campus: 95824</li>
+                          <li class="js-graphItem" data-val="7" data-color="#e3c91e">Boston Housed off campus: 44930</li>
                         </ul>
                       </div>
                     </div>
@@ -374,6 +597,92 @@ li {
             </div>
    
 </div>
+
+  <div class=grid-container-3-1>
+    <img src="images/offcampus living 1.JPG">
+    <img src="images/offcampus living 2.JPG">
+    <img src="images/offcampus living 3.JPG">
+  </div>
+
+  <div class="divider-line"></div>
+  <div style="text-align: center; padding-top: 15px;padding-left: 20%; padding-right: 20%;color: rgb(167, 167, 167); font-family:'Times New Roman', Times, serif; line-height: 30px; font-size: 20px;" >
+    <p><a style="font-size: 30px;font-weight: bold; color: rgb(228, 95, 95) " >Questions and Approaches</a>
+      <br><br><br>
+      Although the above data analysis shows that students occupy a high proportion in the city, we do not know their living distribution in the city. Using Boston census 2010 data, we obtained the residential distribution of students between the ages of 20 and 34 according to their age and education level. Furthermore, to further understand the interaction between the student population and the town, we put forward three questions:</p>
+  </div>
+
+  <div style="align-content: center; padding-left: 26%; padding-right: 20%; padding-top: 50px; ">
+    <a href="Map Viewer.html"><img style="width: 700px" src="images/city scale.jpg"; alt="scale1"></a>
+  </div>
+
+  <div style="text-align: center; padding-top: 15px;padding-left: 20%; padding-right: 20%;color: rgb(167, 167, 167); font-family:'Times New Roman', Times, serif; line-height: 30px; font-size: 20px;" >
+      <p><a style="font-size: 20px;font-weight: bold; color: rgb(80, 80, 80) " > Q1: City Scale</a>
+        <br>
+        Does the student residential area show a concentrated distribution? If so, where are they concentrated? If not, what is the distribution pattern of the student population in this area?</p>
+    </div>
+
+    <div style="align-content: center; padding-left: 35%; padding-right: 20%; padding-top: 70px; padding-bottom: 30px; ">
+        <a href="Density2d Research.html"><img style="width: 400px" src="images/Neighborhood scale.jpg"; alt="scale2"></a>
+    </div>
+
+    <div style="text-align: center; padding-top: 15px;padding-left: 20%; padding-right: 20%;color: rgb(167, 167, 167); font-family:'Times New Roman', Times, serif; line-height: 30px; font-size: 20px;" >
+        <p><a style="font-size: 20px;font-weight: bold; color: rgb(80, 80, 80) " > Q2: Neighborhood Scale</a>
+          <br>
+          How to categorize neighborhood typologies base on student residential population density study? </p>
+      </div>
+
+     <div style="align-content: center; padding-left: 42%; padding-right: 20%; padding-top: 110px; padding-bottom: 30px; ">
+          <a href="case study - Allston Brighton.html"><img style="width: 200px" src="images/Block scale.jpg"; alt="scale3"></a>
+      </div>
+  
+      <div style="text-align: center; padding-top: 15px;padding-left: 20%; padding-right: 20%;color: rgb(167, 167, 167); font-family:'Times New Roman', Times, serif; line-height: 30px; font-size: 20px;" >
+          <p><a style="font-size: 20px;font-weight: bold; color: rgb(80, 80, 80) " > Q3: Parcel Scale</a>
+            <br>
+            Can we observe urban form through a new lens by using population density associated with other concepts of urban density? </p>
+      </div> 
+
+      <br><br><br><br><br>
+
+      <div class="divider-line"></div>
+
+      <div class=grid-container-2-3>
+          <p class=text3>For this study, we introduced the concept of density as an indicator to explore the distribution of the student population. However, density is a relatively vague concept, and the understanding of density varies from person to person. What is the definition and measurement of urban density? There is no single scale at which to measure urban density, but the larger the scale, the lower the density. The best approach is to understand density as multi-scalar. </p>
+          <p class=text3>Therefore, we believe that multi-dimensional density calculation and research can better help us to explore the correlation between the student population distribution and the other characteristics of the city. For example, the higher the student population density is, the higher the business vitality or, the lower the neighborhood living stability (the renting cycle of students generally does not exceed 3-4 years).</p>
+        </div>
+
+    <!--Explore Button-->
+
+    <div class=explorebutton>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo"/>
+            </filter>
+          </defs>
+        </svg>
+        
+        <span class="button--bubble__container">
+          <a href="Density2d Research.html" class="button button--bubble">
+            Explore more
+          </a>
+          <span class="button--bubble__effect-container">
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+        
+            <span class="button effect-button"></span>
+        
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+          </span>
+        </span>
+    </div>
+
+
+
 
     <script src='jquery.min.js'></script>
     <script src='snap.svg-min.js'></script>
@@ -512,6 +821,16 @@ li {
       });
       
     })(); </script>
+
+
+<!--Explore button script-->
+
+<script src='CSSPlugin.min.js'></script>
+<script src='EasePack.min.js'></script>
+<script src='TweenLite.min.js'></script>
+<script src='jquery.min.js'></script>
+<script src='TimelineLite.min.js'></script>
+<script src="script Explore Button.js"></script>
 
 
 
